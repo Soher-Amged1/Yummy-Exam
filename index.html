@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy Exam</title>
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="loading d-none">
+    <i class="fa fa-spinner fa-spin text-white fa-5x"></i>  </div>
+  <section id="home py-5">
+    <div class="nav-bar d-flex" style="left: 0px;">
+      <section class="bg-black nav1">
+        <div class="container d-flex justify-content-center flex-column h-100 ps-4 py-4 ">
+          <ul class=" list-unstyled text-decoration-none">
+            <li class="py-2" style="top: 0px;">
+              <a onclick="showSearchInputs()" class="navLink text-white text-decoration-none" getid="Search" href="#">Search</a>
+            </li>
+            <li class="py-2" style="top: 0px;">
+              <a onclick="showCategory()" class="navLink text-white text-decoration-none" getid="Categories" href="#">Categories</a>
+            </li>
+            <li class="py-2" style="top: 0px;">
+              <a onclick="showArea()" class="navLink text-white text-decoration-none" getid="Area" href="#">Area</a>
+            </li>
+            <li class="py-2" style="top: 0px;">
+              <a onclick="showIngredients()" class="navLink text-white text-decoration-none" getid="Ingredients" href="#">Ingredients</a>
+            </li>
+            <li class="py-2" style="top: 0px;">
+              <a onclick=" contact()" class="navLink text-white text-decoration-none" getid="Contact" href="#">Contact Us</a>
+            </li>
+          </ul>
+          <div class="mt-auto">
+            <i class="pointer fa-brands fa-facebook fa-sm text-white my-3"></i>
+            <i class="pointer fa-brands fa-twitter fa-sm text-white my-3"></i>
+            <i class="pointer fa-solid fa-globe fa-sm text-white my-3"></i>
+            <p class="text-white">Copyright Â© 2019 All Rights
+              Reserved.</p>
+          </div>
+        </div>
+      </section>
+  
+      <section class="bg-white nav2 d-flex flex-column align-items-center justify-content-between px-2 py-4">
+        <div>
+          <img src="img/logo.png" class="w-100" alt="logo">
+        </div>
+        <div class="pointer">
+          <i class="fa-solid fa-bars fa-2xl text-black" id="openNav" style="display: none;"></i>
+          <i class="fa-solid fa-x fa-2xl text-black" id="closeNav" style="display: block;"></i>
+        </div>
+        <div class="pointer">
+          <i class="fa-solid fa-earth fa-sm d-block text-black my-3"></i>
+          <i class="fa-solid fa-share-nodes fa-sm text-black d-block"></i>
+        </div>
+      </section>
+    </div>
+    <div class="my-2 mx-5">
+      <div id="mealIngredient" class="mealinged container">
+    </div>
+      </div>
+
+      <div class="menu my-2 mx-5">
+        <div id="displayin" class="my-3 mx-5 row g-4">
+  
+        </div>
+        <div id="displayData" class="my-3 mx-5 row g-4">
+  
+        </div>
+      </div>
+  </section>
+  
+    <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
